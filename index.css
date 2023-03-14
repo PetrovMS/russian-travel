@@ -7,56 +7,170 @@ body {
 }
 
 .header {
-    width: 1184px;
-    height: 52px;
+    max-width: 1184px;
+    max-height: 52px;
     padding: 28px 48px 0;
     display: flex;
+    justify-content: space-between;
 }
 
 .header__logo {
-    width: 176px;
-    height: 52px;
+    width: 100%;
+}
+
+.header__lang_links {
+    display: flex;
+    gap: 18px;
+    margin-top: 46px;
 }
 
 .header__lang_link {
     color: white;
     font-size: 24px;
+    line-height: 28px;
     font-weight: 400;
     text-decoration: none;
 }
 
 .lead {
-    padding: 56px 148px 0;
+    margin: 56px 148px 0;
 }
 
 .lead__title {
-    width: 720px;
-    height: 200px;
+    max-width: 720px;
+    max-height: 200px;
     font-size: 96px;
     font-weight: 900;
     line-height: 100px;
     text-align: center;
     color: white;
-    margin: 0;
-    padding: 0 132px;
+    margin: 0 auto;
 }
 
 .lead__subtitle {
+    max-width: 640px;
+    max-height: 72px;
     font-size: 30px;
     font-weight: 400;
     line-height: 36px;
     text-align: center;
     color: white;
+    margin: 0 auto;
+    padding-top: 32px;
 }
 
 .lead__image {
-    height: 615px;
-    width: 984px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 64px;
 }
 
 .lead__caption {
+    max-width: 158px;
+    max-height: 14px;
     font-size: 10px;
     font-weight: 400;
     line-height: 14px;
     text-align: left;
+    color: #FFFFFF;
+    margin: 0;
+    padding-top: 8px;
+}
+
+.intro {
+    margin: 92px 442px 0 148px;
+}
+
+.intro__title {
+    max-width: 690px;
+    max-height: 58px;
+    font-weight: 900;
+    font-size: 54px;
+    line-height: 58px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.intro__text {
+    max-width: 690px;
+    max-height: 208px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 163%;
+    color: #FFFFFF;
+    margin: 0;
+    padding-top: 40px;
+}
+
+.intro__list {
+    max-width: 690px;
+    max-height: 90px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    color: #FFFFFF;
+    list-style-type: none;
+    padding: 33px 0;
+    margin: 0;
+}
+
+.photo-grid {
+    margin: 92px 48px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 16px;
+}
+
+.photo-grid__item {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+
+    .header {
+        padding: 16px 16px 0;
+    }
+
+    .header__lang_link {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .lead {
+        margin: 48px 16px 0;
+    }
+
+    .lead__title {
+        font-size: 40px;
+        line-height: 44px;
+    }
+    
+    .lead__subtitle {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .intro {
+        margin: 64px 16px 0;
+    }
+
+    .intro__title {
+        font-size: 32px;
+        line-height: 35px;
+    }
 }
