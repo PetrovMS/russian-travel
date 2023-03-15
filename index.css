@@ -7,7 +7,7 @@ body {
 }
 
 .header {
-    max-width: 1184px;
+    width: 90%;
     max-height: 52px;
     padding: 28px 48px 0;
     display: flex;
@@ -21,7 +21,7 @@ body {
 .header__lang_links {
     display: flex;
     gap: 18px;
-    margin-top: 46px;
+    margin-top: 18px;
 }
 
 .header__lang_link {
@@ -30,6 +30,10 @@ body {
     line-height: 28px;
     font-weight: 400;
     text-decoration: none;
+}
+
+.header__lang_link_focused {
+    text-decoration: underline;
 }
 
 .lead {
@@ -117,7 +121,7 @@ body {
 .photo-grid {
     margin: 92px 48px 0;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-template-rows: auto;
     gap: 16px;
 }
@@ -126,17 +130,153 @@ body {
     width: 100%;
 }
 
+.places {
+    max-width: 984px;
+    margin: 92px auto 0;
+}
 
+.place {
+    display: grid;
+    grid-template-columns: minmax(min-content, 460px) minmax(min-content, 484px);
+    gap: 48px 40px;
+    padding-bottom: 80px;
+}
 
+.place:last-child {
+    padding-bottom: 0;
+}
 
+.place__title {
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 76px;
+    margin: 0;
+}
 
+.place__image {
+    width: 100%;
+}
 
+.place__website {
+    align-self: end;
+}
 
+.place__url_heading {
+    color: #AAAAAA;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+}
 
+.place__link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
 
+.place__link:hover {
+    opacity: 0.8;
+}
 
+.place__paragraph {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 163%;
+    margin: 0 0 26px;
+}
 
+.cover {
+    padding: 92px 48px;
+}
 
+.cover__background {
+    min-height: 740px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    background-image: url(./images/__background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cover__background::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #2A2C2F;
+    opacity: 0.3;
+    z-index: 1;
+}
+
+.cover__background:hover::after {
+   background-color: #2A2C2F;
+   opacity: 0.8;
+}
+
+.cover__title {
+    max-width: 560px;
+    margin: 0 auto 32px;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 76px;
+    text-align: center;
+    z-index: 2;
+}
+
+.cover__subtitle {
+    max-width: 360px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    z-index: 2;
+}
+
+.footer {
+    max-width: 1184px;
+    margin: 0 auto;
+    padding-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__links {
+    display: flex;
+    gap: 18px;
+}
+
+.footer__link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer__link:hover {
+    opacity: 0.8;
+}
+
+.footer__copypight {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    margin: 0;
+
+}
 
 
 
@@ -172,5 +312,65 @@ body {
     .intro__title {
         font-size: 32px;
         line-height: 35px;
+    }
+
+    .intro__list {
+        width: 90%;
+    }
+
+    .photo-grid {
+        width: 90%;
+        margin: 64px 16px 0;
+    }
+
+    .place__title {
+        font-size: 42px;
+        line-height: 46px;
+    }
+
+    .place__paragraph {
+        font-size: 16px;
+    }
+    .cover__background {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .lead__image {
+        width: calc(100% + 32px);
+        margin-left: -16px;
+        padding-top: 40px;
+    }
+    
+    .place__title {
+        font-size: 32px;
+        line-height: 35px;
+    }
+
+    .place {
+        width: 90%;
+        margin: 0 auto;
+        grid-template-columns: minmax(min-content, 320px);
+        gap: 32px;
+        padding-bottom: 50px;
+    }
+
+    .place__image {
+        width: calc(100% + 32px);
+        margin-left: -16px;
+    }
+
+    .cover__title {
+        margin: 0 auto 16px;
+        font-size: 32px;
+        line-height: 35px;
+        
+    }
+    
+    .cover__subtitle {
+        margin: 0 auto;
+        font-size: 14px;
+        line-height: 16px;
     }
 }
