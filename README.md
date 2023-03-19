@@ -6,15 +6,14 @@
 
 **Инструменты**
 
-*Адаптивная вёрстка;
-*Grid Layout;
-*Flexbox - вёстка;
-*Методология БЭМ;
-*Figma;
-*HTML5;
-*CSS3;
+* Адаптивная вёрстка;
+* Grid Layout;
+* Flexbox - вёстка;
+* Методология БЭМ;
+* Figma;
+* HTML5;
+* CSS3;
 
 **GH pages**
 
-* [Ссылка на проект в GitHub Pages](https://github.com/PetrovMS/russian-travel.git)
-
+* [Ссылка на проект в GitHub Pages](https://petrovms.github.io/russian-travel/index.html) 

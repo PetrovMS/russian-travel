@@ -1,6 +1,5 @@
 .cover__background {
-    max-height: 740px;
-    height: calc(100vw/1.6);
+    min-height: 740px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -34,11 +33,20 @@
 @media screen and (max-width: 1279px) {
     .cover__background {
         width: 100%;
+        height: calc(100vw/1.6);
     }
 }
 
 @media screen and (max-width: 1023px) {
     .cover__background {
         width: 100%;
+        height: calc(100vw/1.6);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .cover__background {
+        width: 100%;
+        height: calc(100vw/1.6);
     }
 }
