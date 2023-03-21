@@ -19,10 +19,10 @@
 
 @media screen and (max-width: 767px) {
     .place__paragraph {
-        margin: 25px 16px 0 0;
+        margin-right: 16px;
     }
 
     .place__paragraph:last-child {
-        margin: 25px 16px 0 0;
+        margin-right: 16px;
     }
 }
