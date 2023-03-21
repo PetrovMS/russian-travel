@@ -1,9 +1,9 @@
-.place { 
-    display: grid; 
-    grid-template-columns: minmax(min-content, 460px) minmax(min-content, 484px); 
-    gap: 48px 40px; 
-    padding-bottom: 80px; 
-} 
+.place {
+    display: grid;
+    grid-template-columns: minmax(min-content, 460px) minmax(min-content, 484px);
+    gap: 48px 40px;
+    padding-bottom: 80px;
+}
 
 .place:last-child {
     padding-bottom: 0;
